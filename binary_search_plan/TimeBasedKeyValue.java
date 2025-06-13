@@ -3,7 +3,6 @@ package binary_search_plan;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Set;
 
 class Pair{
     String val;
