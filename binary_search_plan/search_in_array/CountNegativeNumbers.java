@@ -1,5 +1,5 @@
 //LeetCode Problem: https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/
-package binary_search_plan;
+package binary_search_plan.search_in_array;
 
 public class CountNegativeNumbers {
     public static int countNegatives(int[][] grid) {

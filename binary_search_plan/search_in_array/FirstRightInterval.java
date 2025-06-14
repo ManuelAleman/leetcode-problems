@@ -1,5 +1,5 @@
 //LeetCode Problem: https://leetcode.com/problems/find-right-interval/
-package binary_search_plan;
+package binary_search_plan.search_in_array;
 
 import java.util.Arrays;
 

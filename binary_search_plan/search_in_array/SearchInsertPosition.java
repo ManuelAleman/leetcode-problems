@@ -1,5 +1,5 @@
 //LeetCode Problem: https://leetcode.com/problems/search-insert-position/
-package binary_search_plan;
+package binary_search_plan.search_in_array;
 
 public class SearchInsertPosition {
     public static int searchInsert(int[] nums, int target) {

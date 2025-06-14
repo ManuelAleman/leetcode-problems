@@ -1,5 +1,5 @@
 //LeetCode Problem: https://leetcode.com/problems/binary-search/
-package binary_search_plan;
+package binary_search_plan.search_in_array;
 public class BinarySearch {
 
     public static int search(int[] nums, int target) {

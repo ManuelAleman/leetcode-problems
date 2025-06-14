@@ -1,5 +1,5 @@
 //LeetCode Problem: https://leetcode.com/problems/find-smallest-letter-greater-than-target/
-package binary_search_plan;
+package binary_search_plan.search_in_array;
 
 public class FindSmallestLetter {
     public static char nextGreatestLetter(char[] letters, char target) {

@@ -1,5 +1,5 @@
 //LeetCode Problem: https://leetcode.com/problems/time-based-key-value-store/
-package binary_search_plan;
+package binary_search_plan.search_in_array;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -53,7 +53,6 @@ class TimeMap{
 
 public class TimeBasedKeyValue{
     public static void main(String[] args) {
-        ArrayList<Pair> pair ;
-        //TEST CASES
+       
     }
 }
