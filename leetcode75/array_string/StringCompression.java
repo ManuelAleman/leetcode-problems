@@ -3,13 +3,30 @@ package leetcode75.array_string;
 
 public class StringCompression {
     public static int compress(char[] chars) {
-        if(chars.length==1) return 1;
-        for( int i=0; i<chars.length; i++ ){
-           
-        }
-        return 0;
-    }
+        int write = 0;
+        int i = 0;
 
+        while (i < chars.length) {
+            char currentChar = chars[i];
+            int count = 0;
+
+            while (i < chars.length && chars[i] == currentChar) {
+                i++;
+                count++;
+            }
+
+            chars[write++] = currentChar;
+
+            if (count > 1) {
+                String str = Integer.toString(count);
+                for (char c : str.toCharArray()) {
+                    chars[write++] = c;
+                }
+            }
+        }
+
+        return write;
+    }
     public static void main(String[] args) {
         System.out.println(compress(new char[]{'a','a','b','b','c','c','c'}));                              //6
         System.out.println(compress(new char[]{'a'}));                                                      //1
