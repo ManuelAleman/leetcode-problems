@@ -7,7 +7,9 @@ public class SnapshotArray {
     TreeMap<Integer, Integer>[] tree;
     int snap_id = 0;
 
+    @SuppressWarnings("unchecked")
     public SnapshotArray(int length) {
+
         tree = new TreeMap[length];
         for(int i=0; i<length; i++){
             tree[i] = new TreeMap<Integer, Integer>();
