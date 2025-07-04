@@ -1,18 +1,17 @@
+//LeetCode Problem: https://leetcode.com/problems/intersection-of-two-linked-lists/
 package easy.linked_list;
 
 public class IntersectionOfTwoLinkedList{
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        
-        while(headA.next != null){
-            headA = headA.next;
+        ListNode a = headA;
+        ListNode b = headB;
+        while(a != b){
+
+            a = (a!=null) ? a.next : headB;
+            b = (b!=null) ? b.next : headA;
         }
 
-
-        while(headB != headA ){
-            headA = (headA!=null) ? headA.next : headB;
-            headB = (headB!=null) ? headB.next : headA;
-        }
-        return headA;
+        return a;
     }
     public static void main(String[] args) {
         
